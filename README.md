@@ -28,3 +28,7 @@ To use this, add at the top of your dashbord above your rows. Change the button 
 <row id="row4">
 ...
 ```
+
+![sticky-flyout-ezgif com-loop-count](https://github.com/user-attachments/assets/20b04381-da85-42cb-a40d-ebce77c8d770)
+
+
