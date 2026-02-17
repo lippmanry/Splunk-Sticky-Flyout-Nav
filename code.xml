@@ -1,0 +1,183 @@
+<fieldset submitButton="false">
+    /* some xml included  */
+  <html>
+  <style>
+       .hide-global-filters {
+        display: none !important;          
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+          padding: 0;
+    }
+  
+    .dropdown ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  }  
+    
+    
+    .fieldset.dashboard-form-globalfieldset.editable{
+      position:sticky;
+      top: 0 !important;
+      z-index: 3;
+      display: inline-block;
+      width:100%;
+    }
+  
+  .dropdown {
+    position: relative;
+    display: block;
+    max-width: 13em;
+    width: 100%;
+    float: left;
+        margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .dropbtn {
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 13em;
+    width: 100%;
+    color: white;
+    padding: 14px 16px;
+    margin 0;
+    font-size: 16px;
+    border: none;
+    
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin: 0;
+    max-width: 13em;
+    width: 100%;  
+  }
+  .dropdown-content li {
+  
+    text-decoration: none;
+    display: block;
+    position: relative;
+    border-top: 0;
+    max-width: 13em;
+    width: 100%;
+  
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgba(0, 0, 0, 1);
+  }
+  
+  .dropdown:hover .dropbtn:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #00cefd !important;    
+  }
+  .dropdown-content-list {
+  display: none;
+  }
+  
+  .dropdown-content-list:hover {
+  display: block !important; 
+  }
+  
+  .dropdown-content-li:hover .dropdown-content-list {
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  max-width: 8em;
+  width: 100%;
+  
+  
+  }
+  .dropdown-content li a{
+    background-color: rgba(0, 0, 0, 1);
+    max-width: 13em;
+    width: 100%;
+    color: white;
+    padding: 14px 16px;
+    margin 0;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+    display: block;
+    position: relative;
+  
+  
+  }
+  .dropdown-content li a:hover{
+      background-color: rgba(0, 0, 0, 1);
+    color: #00cefd !important;        
+  }
+    </style>
+  <div class="dropdown">
+  <button class="dropbtn">Navigation  <i class="icon-triangle-down-small"/>
+        </button>
+  
+  <div class="dropdown-content">
+      <ul>
+        <li class="dropdown-content-li">
+          <button class="dropbtn">Second Level Drop  <i class="icon-triangle-right-small"/>
+                </button>
+                <!--/* flyout */-->
+          <div class="dropdown-content-list">
+            <ul>
+              <li><a href="#example">EXAMPLE</a></li>
+              <li><a href="#example">EXAMPLE</a></li>
+              <li><a href="#example">EXAMPLE</a></li>
+              <li><a href="#example">EXAMPLE</a></li>
+              <li><a href="#example">EXAMPLE</a></li>
+            </ul>         
+           </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="dropdown-content-li">
+          <button class="dropbtn">Second Level Drop  <i class="icon-triangle-right-small"/>
+                </button>
+          <div class="dropdown-content-list">
+            <ul>
+              <li><a href="#example">EXAMPLE</a></li>
+              <li><a href="#example">EXAMPLE</a></li>
+            </ul>         
+           </div>
+        </li>
+      </ul>    
+      <ul>
+      <!--/* there is a weird period character before i class and after button*/-->
+        <li class="dropdown-content-li">
+          <!-- change this for first level-->
+          <button class="dropbtn">Row IDs <i class="icon-triangle-right-small"/>
+                </button>
+          <div class="dropdown-content-list">
+            <ul>
+              <!-- change these for second level flyout section (must match a row or panel ID in your dashboard xml)  -->
+              <li><a href="#row1">Row 1</a></li>
+              <li><a href="#row4">Row 4</a></li>
+              <li><a href="#row6">Row 6</a></li>
+              <li><a href="#row8">Row 8</a></li>
+    	        <li><a href="#row9">Row 9</a></li>
+            </ul>         
+           </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="dropdown-content-li">
+          <button class="dropbtn">Metric Examples  <i class="icon-triangle-right-small"/>
+                </button>
+          <div class="dropdown-content-list">
+            <ul>
+              <li><a href="#row8Panel1">Example 1</a></li>
+              <li><a href="#row6Panel2">Example 2</a></li>
+              <li><a href="#row3Panel1">Example 3</a></li>            
+            </ul>         
+           </div>
+        </li>
+      </ul>     
+    </div>
+  </div>
+  </html>
+</fieldset>
